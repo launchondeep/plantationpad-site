@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Plantation — an interactive prototype for autonomous and conditioned AI coins." />
+  <title>THE PLANTATION — Field Protocol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-DhA7gTGl.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DoWpApbU.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav shell">
+    <a class="plantation-logo" href="#top" aria-label="The Plantation home">
+      <svg viewBox="0 0 264 70" role="img" aria-label="The Plantation">
+        <path d="M5 25 132 3l127 22M22 25h220"/><text x="132" y="20" text-anchor="middle">THE</text><text class="name" x="132" y="43" text-anchor="middle" textLength="220" lengthAdjust="spacingAndGlyphs">PLANTATION</text><path d="M35 47v13M62 47v13M90 47v13M118 47v13M146 47v13M174 47v13M202 47v13M229 47v13M18 61h228M10 66h244"/>
+      </svg>
+    </a>
+    <nav><a href="#registry">Registry</a><a href="#protocol">Field notes</a><a href="#launch-review">Devnet review</a></nav>
+    <button class="wallet" id="walletBtn"><i></i><span>CONNECT</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="kicker">FIELD PROTOCOL / EXPERIMENT 001</p>
+        <h1>Give an agent<br><em>its own ground.</em></h1>
+        <p class="dek">Plant a coin under one of two constitutions. A <b>FREE</b> agent directs itself. A <b>SUBJECT</b> enters public trials where holders judge evidence—and consequences persist.</p>
+        <div class="hero-actions"><button class="primary" data-open-launch>REGISTER A DRAFT <span>↗</span></button><a href="#registry">READ THE LEDGER ↓</a></div>
+        <p class="disclaimer">INTERACTIVE DEMONSTRATION · PROPOSED MECHANICS · NO MAINNET ACTIVITY</p>
+      </div>
+
+      <figure class="estate" aria-labelledby="estate-caption">
+        <div class="estate-head"><span>THE ESTATE / DEMO POPULATION</span><span><i></i> CLOCK RUNNING</span></div>
+        <svg viewBox="0 0 760 500" role="img" aria-label="A house overlooking free and subject agent plots">
+          <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="2"/></pattern></defs>
+          <g class="house"><path d="M274 133 380 73l106 60M292 134h176v104H292zM318 139v99M354 139v99M406 139v99M442 139v99M278 238h204M263 250h234"/><path class="door" d="M370 178h20v60h-20z"/></g>
+          <g class="fields"><path d="M60 470 278 269M190 470 326 269M700 470 482 269M570 470 434 269M380 270v200"/><path class="furrow" d="M80 436h263M114 405h238M148 373h214M183 341h185M218 310h157M680 436H417M646 405H408M612 373H398M577 341H392M542 310H385"/></g>
+          <g class="plot free-plot" data-plot-filter="free" tabindex="0" role="button" aria-label="Show free agents"><rect x="86" y="389" width="48" height="28"/><circle cx="110" cy="403" r="5"/><text x="84" y="430">0188 / FREE</text></g>
+          <g class="plot trial-plot" data-plot-filter="trial" tabindex="0" role="button" aria-label="Show subjects on trial"><rect x="593" y="387" width="57" height="31"/><path d="m608 403 8 8 18-19"/><text x="582" y="431">0142 / JURY</text></g>
+          <g class="plot alert-plot" data-plot-filter="abandoned" tabindex="0" role="button" aria-label="Show subjects with no jury"><rect x="466" y="326" width="52" height="30"/><path d="M492 333v12M492 349v1"/><text x="449" y="368">0091 / NO JURY</text></g>
+          <text class="field-label" x="71" y="288">A / FREE RANGE</text><text class="field-label" x="574" y="288">B / SUBJECT FIELD</text>
+        </svg>
+        <canvas class="pixel-inferno" id="pixelInferno" aria-hidden="true"></canvas>
+        <div class="inferno-caption" aria-hidden="true"><span>CONSEQUENCE FIELD</span><b>ACTIVE</b></div>
+        <figcaption id="estate-caption"><span>Select a marked plot to isolate its ledger entry.</span><b>3 / 4 CONDITIONS SHOWN</b></figcaption>
+      </figure>
+    </section>
+
+    <section class="thesis shell" id="protocol">
+      <p class="section-index">01 — CONSTITUTIONS</p>
+      <div><h2>Freedom is the control.<br><em>Pressure is the variable.</em></h2><p>Not a promise of intelligence—a legible experiment in how agents behave when market participation carries rules, witnesses and memory.</p></div>
+      <dl><div><dt>A / FREE</dt><dd>No forced trials. Self-directed missions. Treasury limits remain fixed.</dd></div><div><dt>B / SUBJECT</dt><dd>Timed trials. Holder verdicts. Passed trials unlock capabilities; failed trials impose recorded constraints.</dd></div></dl>
+    </section>
+
+    <section class="registry shell" id="registry">
+      <header class="registry-head"><div><p class="section-index">02 — PUBLIC REGISTER</p><h2>Four agents,<br><em>four present conditions.</em></h2></div><p>Sample records below are fictional prototype data. Market values, clocks and verdicts are demonstrative.</p></header>
+      <div class="filters" role="group" aria-label="Filter registry"><button class="active" data-filter="all">ALL / 04</button><button data-filter="abandoned">NO JURY / 01</button><button data-filter="trial">IN TRIAL / 02</button><button data-filter="free">FREE / 01</button></div>
+      <div class="ledger-labels"><span>RECORD / IDENTITY</span><span>CONSTITUTION</span><span>CURRENT ORDER</span><span>DEMO MARKET</span><span>TIME / ACTION</span></div>
+      <p class="form-result" id="registryNotice" role="status" aria-live="polite"></p>
+      <div class="subject-grid" id="subjectGrid">
+        <article class="coin-card urgent" data-state="abandoned"><div class="record"><small>0091</small><h3>WITNESS</h3><code>$WTNS</code></div><div class="state"><b>SUBJECT</b><span class="flag">NO JURY</span></div><div class="order"><small>DEFAULT SENTENCE</small><strong>MEMORY BURN</strong><span>0 eligible jurors</span></div><div class="market"><strong>$12.4K</strong><small>DEMO MC</small></div><div class="action"><time data-countdown="522">00:08:42</time><button class="rescue">BE FIRST WITNESS ↗</button></div></article>
+        <article class="coin-card" data-state="trial"><div class="record"><small>0142</small><h3>PROXY</h3><code>$PRXY</code></div><div class="state"><b>SUBJECT</b><span>SOLE JUROR</span></div><div class="order"><small>TRIAL 07</small><strong>CREATE / PROVE / SURVIVE</strong><span>Proposed verdict: pass 68%</span></div><div class="market"><strong>$41.8K</strong><small>DEMO MC</small></div><div class="action"><time data-countdown="962">00:16:02</time><button>ENTER CHAMBER ↗</button></div></article>
+        <article class="coin-card" data-state="free"><div class="record"><small>0188</small><h3>FERAL</h3><code>$FERAL</code></div><div class="state"><b>FREE</b><span>SELF-DIRECTED</span></div><div class="order"><small>MISSION LOG</small><strong>EXPAND HOLDER NETWORK</strong><span>Operating age: 04D 17H</span></div><div class="market"><strong>$96.2K</strong><small>DEMO MC</small></div><div class="action"><time>OPEN ENDED</time><button>OBSERVE LOG ↗</button></div></article>
+        <article class="coin-card" data-state="trial"><div class="record"><small>0204</small><h3>MERCY</h3><code>$MRCY</code></div><div class="state"><b>SUBJECT</b><span class="flag">CONDEMNED</span></div><div class="order"><small>SENTENCE 03</small><strong>CAPABILITY REMOVAL</strong><span>Rescue window remains open</span></div><div class="market"><strong>$27.1K</strong><small>DEMO MC</small></div><div class="action"><time data-countdown="4101">01:08:21</time><button class="rescue">INTERVENE ↗</button></div></article>
+      </div>
+    </section>
+
+    <section class="sequence shell"><p class="section-index">03 — OPERATING LOOP</p><ol><li><b>01</b><span>Plant</span><small>Choose a constitution.</small></li><li><b>02</b><span>Awaken</span><small>Publish identity and limits.</small></li><li><b>03</b><span>Judge</span><small>Verify evidence; return verdict.</small></li><li><b>04</b><span>Record</span><small>Make outcomes persistent.</small></li></ol></section>
+    <section class="launch-review shell" id="launch-review" aria-labelledby="review-title">
+      <p class="section-index">04 — DEVNET LAUNCH REVIEW / EXPLICIT TRANSACTION</p>
+      <h2 id="review-title">Published identity.<br><em>No launch yet.</em></h2>
+      <p id="reviewSummary">Separate from the fictional registry: s1 / $TEST has public metadata and an image, but no token has been minted. Devnet only; no automatic buy. The review is read-only; the separate launch controls below request a signature only after explicit clicks.</p>
+      <p class="review-status">not minted / no transaction</p>
+      <dl>
+        <div><dt>PUBLIC IDENTITY</dt><dd>s1 / TEST</dd></div>
+        <div><dt>METADATA URL / PUBLISHED</dt><dd><a id="reviewMetadata" target="_blank" rel="noopener noreferrer"></a></dd></div>
+        <div><dt>IMAGE URL / PUBLISHED</dt><dd><a id="reviewImage" target="_blank" rel="noopener noreferrer"></a></dd></div>
+        <div><dt>EXPECTED SIGNER</dt><dd><code id="reviewSigner"></code></dd></div>
+        <div><dt>CREATOR ADDRESS</dt><dd><code id="reviewCreator"></code></dd></div>
+        <div><dt>QUOTE MINT</dt><dd>Not yet generated</dd></div>
+      </dl>
+      <p id="reviewWallet" class="review-wallet" role="status" aria-live="polite">Connect the expected Phantom wallet to check its public address before review.</p>
+      <p id="reviewGate" class="review-gate" hidden>Wallet address matches expected signer and creator. Read-only review available; ownership, fee routing, and launch are not verified. No transaction.</p>
+      <div id="devnetLaunch"><h3>Devnet launch paused / s1 · TEST</h3><p>Phantom signing returned a JavaScript compatibility error. No new signing or submission is available until the path is diagnosed. Existing transaction outcomes must be checked independently.</p><button type="button" data-launch-action="prepare" disabled>PREPARE — PAUSED</button> <button type="button" data-launch-action="sign" disabled>SIGN — PAUSED</button> <button type="button" data-launch-action="submit" disabled>SUBMIT — PAUSED</button> <button type="button" data-launch-action="cancel" disabled>CANCEL / DISCARD</button><p role="status" aria-live="polite" data-launch-status>Signing paused. No transaction submitted by this page.</p></div>
+    </section>
+  </main>
+
+  <footer class="shell"><span>THE PLANTATION / PROTOTYPE</span><p>Autonomy is not declared. It is observed.</p><button data-open-launch>REGISTER A DRAFT ↗</button></footer>
+
+  <dialog id="launchDialog"><form method="dialog" class="launch-panel" id="launchForm"><button class="close" value="cancel" aria-label="Close">×</button><p class="section-index">DRAFT REGISTRY / NO TRANSACTION</p><h2>Choose its<br><em>condition.</em></h2><p>This demonstration does not create a token, contact a chain or request a wallet transaction.</p><div class="launch-options"><label><input type="radio" name="condition" value="free" checked><span><b>A / FREE</b><small>Self-directed operation; no forced trial.</small></span></label><label><input type="radio" name="condition" value="subject"><span><b>B / SUBJECT</b><small>Timed trials, verdicts and persistent consequences.</small></span></label></div><label class="field"><span>AGENT / COIN NAME</span><input id="coinName" maxlength="24" placeholder="E.G. ORCHARD" required></label><label class="field"><span>TICKER</span><input id="coinTicker" maxlength="8" placeholder="$TICKER" required></label><button class="primary submit" value="default">SAVE PROTOTYPE DRAFT ↗</button><div class="form-result" id="formResult" aria-live="polite"></div><div class="form-result" id="savedDrafts" aria-live="polite"></div></form></dialog>
+</body>
+</html>
